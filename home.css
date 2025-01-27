@@ -6,17 +6,18 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     display: flex;
+    font-family: "Open Sans", serif;
     
 
 }
 
 .header {
-    background-image: url('/image/Topo_Site.png');
+    background-image: url('/image/header.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,27 +37,50 @@ body {
 }
 
 .menu {
-    background: linear-gradient(#005185, #f4f4f4);
-    /* Gradiente */
-    height: 60px;
+    
+    height: 100%;
     width: 1437px;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     display: flex;
 }
 
 .imgmenu {
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     position: relative;
-    top: 14px;
+    top: 3px;
 }
 
 .imgmenu2 {
-    width: 35px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
+}
+
+ul{
+    color: #F8F8F8;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    justify-content: space-around;
+    font-size: 3.7rem;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+a {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: #F8F8F8;
+}
+
+li{
     position: relative;
-    top: 9px;
+    padding: 5px;
 }
 
 .suportePainel {
@@ -87,23 +111,27 @@ body {
 
 }
 
-a {
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+#divgradientHome{
+    width: 1440px;
+    height: 50px;
+    background: linear-gradient(#005185, #ffffff);
+    
 
 }
+
+
 
 #sectionhome{
 margin-top: 30px;
 height: 50px;
+position: relative;
+width: 350px;
+right: 17%;
 
 }
 
 #sectionh2home{
-    font-size: 2.4rem;
+    font-size: 3.4rem;
 
 }
 
@@ -126,12 +154,12 @@ margin-top: 15px;
 .top-section {
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaçamento entre o figure e as informações */
+    gap: 15px; /* Espaçamento entre o figure e as informações */
     margin-bottom: 20px; /* Espaçamento entre a seção superior e inferior */
 }
 
 .top-section figure {
-    width: 80px; /* Largura da figura */
+    width: 100px; /* Largura da figura */
     height: 80px; /* Altura da figura */
     background-color: #ccc; /* Apenas para visualização, remova ou ajuste conforme necessário */
     border: 1px solid #000;
@@ -140,7 +168,8 @@ margin-top: 15px;
 .info {
     display: flex;
     flex-direction: column;
-    gap: 5px; /* Espaçamento entre os labels e parágrafos */
+    gap: 5px; 
+    width: 100%;
 }
 
 .bottom-section1 {
@@ -182,6 +211,17 @@ main p {
 
 main input {
     font-size: 1.4rem;
-    padding: 8px;
+    height: 40px;
     width: 150px;
+    background-color: #e7e7e7;
+    border: 0.75px solid #004A8D;
+    border-radius: 5px;
+    transition: 3ms;
+}
+
+main input:focus {
+    border: 0.75px solid #F7941D;
+    border-bottom: 2px solid #F7941D;
+    background-color: #ffffff;
+    transition: 3ms;
 }
