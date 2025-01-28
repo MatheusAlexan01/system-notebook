@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     display: flex;
     font-family: "Open Sans", serif;
-    
+
 
 }
 
@@ -34,15 +34,17 @@ body {
     text-align: center;
     font-size: 2.4rem;
     margin-left: 20px;
+
 }
 
 .menu {
-    
+
     height: 100%;
     width: 1437px;
     justify-content: center;
     align-items: end;
     display: flex;
+    
 }
 
 .imgmenu {
@@ -57,7 +59,7 @@ body {
     height: 28px;
 }
 
-ul{
+.paginasmenu {
     color: #F8F8F8;
     list-style-type: none;
     display: flex;
@@ -78,9 +80,11 @@ a {
     color: #F8F8F8;
 }
 
-li{
+li {
     position: relative;
     padding: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .suportePainel {
@@ -111,35 +115,41 @@ li{
 
 }
 
-#divgradientHome{
+#divgradientHome {
     width: 1440px;
     height: 50px;
     background: linear-gradient(#005185, #ffffff);
-    
+
 
 }
 
 
 
-#sectionhome{
-margin-top: 30px;
-height: 50px;
-position: relative;
-width: 350px;
-right: 17%;
+#sectionhome {
+    margin-top: 30px;
+    height: 50px;
+    position: relative;
+    width: 1000px;
+    bottom: 20px;
 
 }
 
-#sectionh2home{
-    font-size: 3.4rem;
-
+h1 {
+    font-size: 4.9rem;
+    color: #454545;
+    font-family: "Poppins", serif;
+    letter-spacing: 3px;
 }
 
-.containerhome{
-width: 1000px;
-height: 400px;
-border: solid red;
-margin-top: 15px;
+
+
+.containerhome {
+    width: 1000px;
+    height: 400px;
+    margin-top: 15px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 
 }
 
@@ -148,55 +158,78 @@ margin-top: 15px;
     flex-direction: column;
     width: 50%;
     height: 100%;
-    border: solid blue;
+}
+
+#maindireita {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    font-family: "Poppins", serif;
+    letter-spacing: 1px;
+    margin-left: 50px;
+}
+
+#maindireita h2 {
+    font-size: 23px;
+    color: #454545;
 }
 
 .top-section {
     display: flex;
     align-items: center;
-    gap: 15px; /* Espaçamento entre o figure e as informações */
-    margin-bottom: 20px; /* Espaçamento entre a seção superior e inferior */
+    gap: 15px;
+    /* Espaçamento entre o figure e as informações */
+    margin-bottom: 20px;
+    /* Espaçamento entre a seção superior e inferior */
 }
 
 .top-section figure {
-    width: 100px; /* Largura da figura */
-    height: 80px; /* Altura da figura */
-    background-color: #ccc; /* Apenas para visualização, remova ou ajuste conforme necessário */
-    border: 1px solid #000;
+    width: 120px;
+    /* Largura da figura */
+    height: 90px;
+    /* Altura da figura */
+    background-color: #E4E6E7;
+    /* Apenas para visualização, remova ou ajuste conforme necessário */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    gap: 5px; 
+    gap: 5px;
     width: 100%;
 }
 
 .bottom-section1 {
     display: flex;
     flex-direction: row;
-    gap: 15px; /* Espaçamento entre os campos */
+    gap: 15px;
+    /* Espaçamento entre os campos */
     align-items: center;
     height: 100px;
 }
 
-.formInputHome1{
-width: 50%;
-flex-direction: column;
-height: 100%;
-display: flex;
-justify-content: center;
-gap: 10px;
-    
+.formInputHome1 {
+    width: 50%;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
 }
 
 .bottom-section2 {
     display: flex;
     flex-direction: row;
-    gap: 15px; /* Espaçamento entre os campos */
+    gap: 15px;
+    /* Espaçamento entre os campos */
     align-items: center;
     margin-top: 20px;
-    
+
 }
 
 
@@ -204,12 +237,13 @@ main label {
     font-size: 2.4rem;
     color: #004A8D;
 }
+
 main p {
     font-size: 1.6rem;
     font-weight: bold;
 }
 
-main input {
+input {
     font-size: 1.4rem;
     height: 40px;
     width: 150px;
@@ -219,9 +253,104 @@ main input {
     transition: 3ms;
 }
 
-main input:focus {
+input:focus {
     border: 0.75px solid #F7941D;
     border-bottom: 2px solid #F7941D;
     background-color: #ffffff;
     transition: 3ms;
+    outline: none;
 }
+
+.notebooksinfos{
+    margin-top: 15px;
+    color: #454545;
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    right: 33px;
+}
+
+#indisponivel{
+    width: 12px;
+    height: 12px;
+    background-color: #8493B3;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+#livres{
+    width: 12px;
+    height: 12px;
+    background-color: #0A3174;
+    margin-right: 5px;
+    border-radius: 2px;
+
+}
+#selecionou{
+    width: 12px;
+    height: 12px;
+    background-color: #E37C02;
+    margin-right: 5px;
+    border-radius: 2px;
+
+}
+
+#notestatus{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 450px;
+    margin-top: 30px;
+}
+
+#DivbuttonHome{
+width: 300px;
+justify-items: center;
+align-items: center;
+display: flex;
+margin-top: 20px;
+}
+
+#DivbuttonHome button{
+    width: 256px;
+    height: 59px;
+    background-color: #004A8D;
+    border-radius: 16px;
+    font-size: 2.4rem;
+    color: white;
+    margin-top: 20px;
+
+}
+
+#DivbuttonHome h2{
+color: #ffffff;
+
+}
+
+#rodape{
+width: 1440px;
+background-color: #005185;
+height: 120px;
+margin-top: 100px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+
+}
+#rodape h2{
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+#logorodapeHome{
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+}
+
